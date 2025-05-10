@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css">
+   <link rel="stylesheet" href="./css/index.css">
+   <script src="./src/js/index.js" defer type="module"></script>
+   <title>Админка</title>
+</head>
+
+<body>
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" >
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <!-- <form>
+                  <div class="mb-3">
+                     <label for="id" class="form-label">ID товара</label>
+                     <input type="text" class="form-control form-control-sm" id="id" name="id" value="1" readonly>
+                  </div>
+                  <div class="mb-3">
+                     <label for="name" class="form-label">Наименование товара</label>
+                     <input type="text" class="form-control form-control-sm" id="name" name="name">
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label" for="img">Фото товара</label>
+                     <input type="text" class="form-control form-control-sm" id="img" name="img">
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label" for="description">Описание товара</label>
+                     <input type="text" class="form-control form-control-sm" id="description" name="description">
+                  </div>
+                  <div class="mb-3">
+                     <label class="form-label" for="price">Цена товара</label>
+                     <input type="text" class="form-control form-control-sm" id="price" name="price">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+               </form> -->
+            </div>
+            <!-- <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+         </div>
+      </div>
+   </div>
+   <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container">
+         <a class="navbar-brand" href="#">LOGO</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Каталог</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/admin.html">Админка</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/info.html">Вывод текста</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="side d-flex">
+      <div class="sidebar custom-collapse w-25" style="min-width: 300px;">
+         <ul class="mt-5 p-0" id="admin-menu">
+            <li>
+               <button class="btn btn-outline-light btn-block w-100" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal" id="add-product">
+                  Добавить товар
+               </button>
+            </li>
+         </ul>
+      </div>
+      <div class="sidecontent h-100 flex-grow-1 position-relative" style="min-width: 100px;">
+         <!-- <button class="btn-close position-absolute start-0 top-0" id="btnClose"></button> -->
+         <!-- <div class="container-fluid">  -->
+         <div class="table-responsive w-100 h-100 py-5 px-2">
+            <table class="table table-bordered text-center align-middle">
+               <thead>
+                  <tr>
+                     <th scope="col">#</th>
+                     <th scope="col">Название</th>
+                     <th scope="col">Изображение</th>
+                     <th scope="col">Описание</th>
+                     <th scope="col">Цена</th>
+                     <th scope="col">Действия</th>
+                  </tr>
+               </thead>
+               <tbody class="table-group-divider" id="tbody">
+
+               </tbody>
+            </table>
+         </div>
+         <!-- </div> -->
+      </div>
+   </div>
+   <script>
+      const nav = document.querySelector('.navbar')
+      const naHeight = nav.getBoundingClientRect().height
+      const side = document.querySelector('.side')
+      // const btnClose = document.getElementById('btnClose')
+      side.style.height = `calc(100vh - ${naHeight}px)`
+      side.querySelector('.sidebar').style.backgroundColor = '#333'
+
+      // function toggleSidebar() {
+      //    const sidebar = document.querySelector('.sidebar')
+      //    sidebar.classList.toggle('custom-collapse')
+      //    // sidebar.classList.toggle('w-0')
+      // }
+      // btnClose.addEventListener('click', toggleSidebar)
+
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+
+body{
+   position: relative;
+   overflow-x: hidden;
+}
+ul, li{
+   list-style: none;
+}
+.bi-cart3::after{
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   border:2px solid #ccc;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   content: attr(data-count);
+   color: #ccc;
+   font-size: 0.5em;
+   top: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+}
+.nav-link{
+   font-size: clamp(0.625rem, 0.55rem + 0.375vw, 1rem);
+}
+.item-header{
+   height: 300px;
+}
+.item-header img{
+   height: 100%;
+   object-fit: cover;
+}
+
+.note {
+   position: fixed;
+}
+.top-right {
+   top: 0;
+   right: 2%;
+}
+.top-left {
+   top: 0;
+   left: 2%;
+}
+.center-left {
+   left: 2%;
+   top: 50%;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+}
+.center-right {
+   right: 2%;
+   top: 50%;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+   -ms-transform: translateY(-50%);
+   -o-transform: translateY(-50%);
+}
+.bottom-left {
+   bottom: 2%;
+   left: 2%;
+}
+.bottom-right {
+   bottom: 2%;
+   right: 2%;
+}
+.note-header {
+   border-bottom: 1px solid #ccc;
+}
+/* .btn-close {
+} */
+.note-body{
+   padding: 0.25rem;
+}
+.product-img {
+   width: 70px;
+   height: 70px;
+   margin-right: 1rem;
+}
+.product-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.sidebar {
+   width: 25%;
+   min-width: 300px;
+   padding: 0 0.24em;
+   transition: all .3s linear;
+   -webkit-transition: all .3s linear;
+   -moz-transition: all .3s linear;
+   -ms-transition: all .3s linear;
+   -o-transition: all .3s linear;
+}
+
+.sidebar.custom-collapse {
+   width: 0;
+   min-width: 0;
+}
+
+.sidebarcontent {
+   transition: all .3s linear;
+   -webkit-transition: all .3s;
+   -moz-transition: all .3s;
+   -ms-transition: all .3s;
+   -o-transition: all .3s;
+}
+
+

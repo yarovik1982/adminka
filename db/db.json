@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Бритва",
+      "description": "Бритва Phillips",
+      "price": 100,
+      "category": "men",
+      "img": "https://avavatar.ru/images/content/19/avavatar.ru-female_character-video_game-18506.webp"
+    },
+    {
+      "id": "2",
+      "title": "Помада",
+      "description": "Помада для губ, бордовый",
+      "price": 200,
+      "category": "women",
+      "img": "https://avavatar.ru/images/content/9/avavatar.ru-female_character-fantasy_character-8192.webp"
+    },
+    {
+      "id": "3",
+      "title": "Игрушка",
+      "description": "Игрушка Поп-рыгун",
+      "price": 300,
+      "category": "child",
+      "img": "https://avavatar.ru/images/content/14/avavatar.ru-fantasy_scene-fantasy_setting-13924.webp"
+    },
+    {
+      "id": "4",
+      "title": "Гравицапа",
+      "description": "Гравицапа для марсианина",
+      "price": 400,
+      "category": "other",
+      "img": "https://avavatar.ru/images/content/14/avavatar.ru-fantasy_character-character_design-13580.webp"
+    },
+    {
+      "id": "5",
+      "title": "shop",
+      "img": "",
+      "description": "Базовый видео-курс по java Script, состоящий из 15 видео-уроков",
+      "price": "2 300",
+      "category": "other"
+    },
+    {
+      "id": "6",
+      "name": "",
+      "img": "",
+      "description": "",
+      "price": ""
+    },
+    {
+      "id": "7",
+      "name": "No Name",
+      "img": "ссылка",
+      "description": "простое задание в тг",
+      "price": "100"
+    }
+  ]
+}
